@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html style="height: 100%;" lang="en_US">
+ <head>
+  <title>W3Schools Online Web Tutorials</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+        body {
+          font-family: "Lato", sans-serif;
+          height: 500px; }
+.w3-container top{
+}
+
+
+          /* W3Schools Font Logo */
+                .w3-logo {
+                font-family:fontawesome;
+                text-decoration:none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                 font-size:37px;
+                 letter-spacing:3px;
+                 color:#555555;
+                 display:block;
+                position:relative;
+                }
+                .w3-logo .dotcom {color:#4CAF50;}
+                @font-face {
+                font-family:'fontawesome';
+                src:url('../lib/fonts/fontawesome.eot?14663396#iefix')    format('embedded-opentype'),
+              url('../lib/fonts/fontawesome.woff?14663396') format('woff'),
+                url('../lib/fonts/fontawesome.ttf?14663396') format('truetype'),
+                url('../lib/fonts/fontawesome.svg?14663396#fontawesome') format('svg');
+                font-style:normal;
+}
+                        .fa {
+                        display:inline-block;
+                font:normal normal normal 14px/1 FontAwesome;
+                font-size:20px;
+                text-rendering:auto;
+                -webkit-font-smoothing:antialiased;
+                -moz-osx-font-smoothing:grayscale;
+                transform:translate(0,0);
+                        }
+                        
+                .fa fa-fw fa-home:before {content:'\e800';}
+                .fa fa-fw fa-menu:before {content: '\f0c9';}
+                .fa fa-fw fa-globe:before {content:'\e801';}
+                .fa fa-fw fa-search:before {content:'\e802'; }
+                .fa fa-fw fa-user:before { content: '\e816'; }
+
+                /* Google */
+                #nav_search {display:none;}
+                #googleSearch {color:#000000;}
+                .searchdiv {
+                max-width:400px;
+                margin:auto;
+                text-align:left;
+                font-size:16px;
+                }
+
+                }
+                td.gsc-search-button input.gsc-search-button {background-color:#555555;border-color:#555555;}
+                input.gsc-input, .gsc-input-box, .gsc-input-box-hover, .gsc-input-box-focus, .gsc-search-button {
+                box-sizing:content-box;
+                line-height:normal;
+                }
+                .gsc-tabsArea div {overflow:visible;}
+                .gsst_a .gscb_a {margin-top:3px;}
+                /* Customize W3.CSS */
+                #nav_tutorials,#nav_references,#nav_examples,#nav_exercises,#nav_login {
+                display:none;
+                padding-bottom:40px;
+                position:absolute;
+                width:100%;
+                z-index:5 !important;
+                }
+                .w3-col .w3-button {
+                margin:5px 5px 5px 0;
+                font-size:16px;
+                }
+                .w3-col.l4 .w3-card-2 {
+                padding:15px 10px;
+                height:260px;
+                }
+
+                .w3-sidebar {
+                z-index:3;
+                width:230px;
+                overflow:hidden !important;
+                position:absolute !important;
+                margin-bottom:-155px;
+                }
+                .w3-sidebar .w3-bar-block .w3-bar-item{
+                padding:0 16px;
+                font-size:16px; 
+                }
+                .w3-bar {
+                position:relative;
+                z-index:4;
+                font-size:17px;
+                }
+                .w3-wide {
+                font-family:"Segoe UI",Arial,sans-serif;
+                }
+                h1 {
+                font-size:80px;
+                color:#555555;
+                margin:2px 0 -20px 0 !important;
+                }
+
+                .login {display:none;line-height:1.5;padding:6px 14px;position:relative;top:5px;color:#fff;background-color:#4CAF50;text-decoration:none;border-radius:5px;font-family:"Segoe UI",Arial,sans-serif;}
+
+
+                  .w3s-logo {font-size:30px;}
+                  .login {top:3px;}
+                }
+
+
+
+
+
+               
+ </style>
+
+ </head>
+	<body>
+	 <div class="w3-container top" style="padding-top:20px;">
+	   <a class="w3-logo" style="position:absolute" href="//www.z3school.com">w3schools<span class="dotcom">.com </span>
+           </a>
+	    <div id="logincontainer" class="w3-right" style="width:80px; height:50px;">
+                 <div id="mypagediv" style="display: none;"></div>
+                        <a id="loginbtn" class="login w3-right hover-greener" style="display: inline;" href="javascript:void(0);" 
+                        onclick="w3_open_nav(login)">LOG IN </a>
+                 </div>	 	
+                 <div id="theworldsgreatest" class="w3-right w3-hide w3-small w3-wide toptext" 
+                    style="float:right; line-height: 50px; margin-right:20px; font-family'Seogoe UI' ,Arial ,sans-serif">THE WORLD'S LARGEST WEB DEVELOPER SITE </div>
+        	
+	           </div>
+
+                <div class="w3-bar w3-sidebar" >
+
+                        <a class="w3-bar-item w3-button w3-hover w3-padding-16 hidesm" href="javascript:void(0)" onclick="w3_open()"> <i class="fa"></i></a>
+                        <a id="navbtn_home" class="w2-bar-item w3-button barex w3-hover-white w3-padding-16" 
+                        href="javascript:void(0)" onclick="w3_open_nav('home')"> HOME  <i class="fa fa-fw fa-home" style="display: inline;"></i> </a>
+
+                        <a id="navbtn_search" class="w2-bar-item w3-button barex w3-hover-white w3-padding-16" 
+                           href="javascript:void(0)" onclick="w3_open_nav('search')"> SEARCH <i class="fa fa-fw fa-search" style="display: inline;"></i> </a>
+
+                        <a id="navbtn_contact" class="w2-bar-item w3-button barex w3-hover-white w3-padding-16"
+                          href="javascript:void(0)" onclick="w3_open_nav('contact')">CONTACT <i class="fa fa-fw fa-envelope" style="display: inline;"></i> </a>
+
+                        <a id="navbtn_trash" class="w2-bar-item w3-button barex w3-hover-white w3-padding-16" 
+                               href="javascript:void(0)" onclick="w3_open_nav('trash')"> TRASH <i class="fa fa-fw fa-trash" style="display: inline;"></i> </a>
+
+
+      <div class="w3-right"
+	 <div class="container" onclick="myFunction(this)"> 
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+                
+                <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Clients</a>
+                <a href="#">Contact</a>
+                </div>
+
+                <div id="main">
+                <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
+  
+           </div>
+
+
+	    </div>
+        </div>
+
+	<script> function myFunction(x) {
+	     X.classList.toggle("change") }
+                
+                function openNav() {
+                  document.getElementById("mySidebar").style.width = "250px";
+                 document.getElementById("main").style.marginLeft = "250px";
+                        }
+
+               function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+                        }
+
+
+	     function openPage(pageName,element,color) {
+               var i, tabecontent, tablinks;
+		tabcontent= document.getElementsByClassName("tabcontent")
+		for (i = 0; i < tabcontent.length; i++) {	
+					tabcontent[i].style.display = "none";
+  						}
+  		tablinks = document.getElementsByClassName("tablink");
+ 		 for (i = 0; i < tablinks.length; i++) {
+   					 tablinks[i].style.backgroundColor = "";
+ 							 }
+		  document.getElementById(cityName).style.display = "block";
+ 		 elmnt.style.backgroundColor = color;
+
+	}
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+
+	</script>	
+	
+ </body>
+</html>
+              
+
+
+
+<!-- <button class="tablink" onclick="openPage('Home', this, 'lightblue')" id="defaultOpen"><a href="#"><i class="fa fa-fw fa-home"></i> Home </a> </button>
+ <button class="tablink" onclick="openPage('Search', this, 'lightblue')" ><a href="#"><i class="fa fa-fw fa-search"></i> Search</a> </button>
+   <button class="tablink" onclick="openPage('Envelope', this, 'lightblue')"><a href="#"><i class="fa fa-fw fa-user"></i>Contact</a></button>
+       <button class="tablink" onclick="openPage('Trash', this, 'lightblue')"> <a href="#"><i class="fa fa-fw fa-user"></i>Trash</a></button>
+
+ <div class="tabcontent">
+	<div id="Home" class="tabcontent-home"> <!--add a href OR REMOVE ICON
+	     <div class="icon-bar">
+	     <i class="fa fa-home"></i>
+	     <p>Home is where the heart is..</p>
+	   </div>icon-bar">
+                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+                 <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+                 <a href="#" class="google"><i class="fa fa-google"></i></a> 
+                   <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+                </div>
+	 </div>
+
+	<div id="Search" class="tabcontent-search">
+	     <div class="search-container">
+                <form action="/action_page.php">
+                 <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"> <i class="fa fa-search"></i> </button>
+                 </form>
+              </div>
+	     <p>lost but gonna be found lol..</p>
+	    </div>
+                <div .tabcontent style="padding-left:16px">
+        </div>
+
+        <div id="Envelope" class="tabcontent-envelope">
+	        <div class="icon-bar">
+	 	 <i class="fa fa-envelope">
+ 		<p>letters?..</p>
+		</div>
+        </div>
+         <div id="Trash" class="tabcontent-trash">
+	        <div class="icon-bar">
+		<i class="fa fa-trash"></i>
+ 		<p>bin directory lol..</p>
+	     </div>
+	  </div>
+
+                      
+
+   -->
